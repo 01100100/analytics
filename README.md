@@ -47,3 +47,10 @@ done
 psql -v -d postgresql://postgres:${PG_PASSWORD}@localhost:15432/umani < ${PG_DUMP_FILE}
 ```
 
+## DNS Configuration
+
+To add a certificate required when pointing a custom domain to the app, run the following command:
+
+```bash
+fly certs add www.example.com
+```
